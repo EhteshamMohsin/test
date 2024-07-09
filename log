@@ -1,0 +1,73 @@
+2024-07-09T14:04:39.1872325Z ##[section]Starting: Run SonarCloud Analysis with Bash
+2024-07-09T14:04:39.1877836Z ==============================================================================
+2024-07-09T14:04:39.1877997Z Task         : Command line
+2024-07-09T14:04:39.1878085Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2024-07-09T14:04:39.1878214Z Version      : 2.237.1
+2024-07-09T14:04:39.1878281Z Author       : Microsoft Corporation
+2024-07-09T14:04:39.1878377Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2024-07-09T14:04:39.1878507Z ==============================================================================
+2024-07-09T14:04:39.5267840Z Generating script.
+2024-07-09T14:04:39.5277688Z ========================== Starting Command Output ===========================
+2024-07-09T14:04:39.5297591Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/93e4e648-20aa-49ad-8244-d4fe790a4138.sh
+2024-07-09T14:04:39.5352510Z Starting SonarCloud Analysis
+2024-07-09T14:04:41.3164837Z 14:04:41.314 INFO: Scanner configuration file: /home/vsts/work/1/s/sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
+2024-07-09T14:04:41.3168880Z 14:04:41.316 INFO: Project root configuration file: NONE
+2024-07-09T14:04:41.3400019Z 14:04:41.339 INFO: SonarScanner 4.6.2.2472
+2024-07-09T14:04:41.3400961Z 14:04:41.339 INFO: Java 11.0.11 AdoptOpenJDK (64-bit)
+2024-07-09T14:04:41.3404101Z 14:04:41.339 INFO: Linux 6.5.0-1023-azure amd64
+2024-07-09T14:04:41.4831168Z 14:04:41.482 DEBUG: keyStore is : 
+2024-07-09T14:04:41.4831884Z 14:04:41.482 DEBUG: keyStore type is : pkcs12
+2024-07-09T14:04:41.4832472Z 14:04:41.482 DEBUG: keyStore provider is : 
+2024-07-09T14:04:41.4832822Z 14:04:41.482 DEBUG: init keystore
+2024-07-09T14:04:41.4837112Z 14:04:41.483 DEBUG: init keymanager of type SunX509
+2024-07-09T14:04:41.6278665Z 14:04:41.625 DEBUG: Create: /home/vsts/.sonar/cache
+2024-07-09T14:04:41.6293396Z 14:04:41.628 INFO: User cache: /home/vsts/.sonar/cache
+2024-07-09T14:04:41.6300028Z 14:04:41.629 DEBUG: Create: /home/vsts/.sonar/cache/_tmp
+2024-07-09T14:04:41.6342502Z 14:04:41.633 DEBUG: Extract sonar-scanner-api-batch in temp...
+2024-07-09T14:04:41.6387624Z 14:04:41.638 DEBUG: Get bootstrap index...
+2024-07-09T14:04:41.6393229Z 14:04:41.639 DEBUG: Download: https://sonarcloud.io/batch/index
+2024-07-09T14:04:42.1958430Z 14:04:42.195 DEBUG: Get bootstrap completed
+2024-07-09T14:04:42.2029218Z 14:04:42.202 DEBUG: Download https://sonarcloud.io/batch/file?name=scanner-sonarcloud-8.0.0.55814-all.jar to /home/vsts/.sonar/cache/_tmp/fileCache11621605490435639089.tmp
+2024-07-09T14:04:43.4391986Z 14:04:43.438 DEBUG: Create isolated classloader...
+2024-07-09T14:04:43.4458695Z 14:04:43.445 DEBUG: Start temp cleaning...
+2024-07-09T14:04:43.4483493Z 14:04:43.447 DEBUG: Temp cleaning done
+2024-07-09T14:04:43.4486208Z 14:04:43.448 INFO: Scanner configuration file: /home/vsts/work/1/s/sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
+2024-07-09T14:04:43.4487635Z 14:04:43.448 INFO: Project root configuration file: NONE
+2024-07-09T14:04:43.4493756Z 14:04:43.449 INFO: Analyzing on SonarCloud
+2024-07-09T14:04:43.4495102Z 14:04:43.449 INFO: Default locale: "en", source code encoding: "UTF-8" (analysis is platform dependent)
+2024-07-09T14:04:43.4501015Z 14:04:43.449 DEBUG: Work directory: /home/vsts/work/1/s/.scannerwork
+2024-07-09T14:04:43.4510596Z 14:04:43.450 DEBUG: Execution execute
+2024-07-09T14:04:43.4780764Z 14:04:43.475 INFO: ------------------------------------------------------------------------
+2024-07-09T14:04:43.4781519Z 14:04:43.475 INFO: EXECUTION FAILURE
+2024-07-09T14:04:43.4782612Z 14:04:43.475 INFO: ------------------------------------------------------------------------
+2024-07-09T14:04:43.4792477Z 14:04:43.475 INFO: Total time: 2.179s
+2024-07-09T14:04:43.4908400Z 14:04:43.489 INFO: Final Memory: 4M/17M
+2024-07-09T14:04:43.4909436Z 14:04:43.489 INFO: ------------------------------------------------------------------------
+2024-07-09T14:04:43.4909969Z 14:04:43.489 ERROR: Error during SonarScanner execution
+2024-07-09T14:04:43.4911086Z java.lang.UnsupportedClassVersionError: org/sonar/batch/bootstrapper/EnvironmentInformation has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+2024-07-09T14:04:43.4911774Z 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+2024-07-09T14:04:43.4912807Z 	at java.base/java.lang.ClassLoader.defineClass(Unknown Source)
+2024-07-09T14:04:43.4914107Z 	at java.base/java.security.SecureClassLoader.defineClass(Unknown Source)
+2024-07-09T14:04:43.4914824Z 	at java.base/java.net.URLClassLoader.defineClass(Unknown Source)
+2024-07-09T14:04:43.4915223Z 	at java.base/java.net.URLClassLoader$1.run(Unknown Source)
+2024-07-09T14:04:43.4915591Z 	at java.base/java.net.URLClassLoader$1.run(Unknown Source)
+2024-07-09T14:04:43.4921750Z 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2024-07-09T14:04:43.4922737Z 	at java.base/java.net.URLClassLoader.findClass(Unknown Source)
+2024-07-09T14:04:43.4923114Z 	at org.sonarsource.scanner.api.internal.IsolatedClassloader.loadClass(IsolatedClassloader.java:82)
+2024-07-09T14:04:43.4923405Z 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+2024-07-09T14:04:43.4923714Z 	at org.sonarsource.scanner.api.internal.batch.DefaultBatchFactory.createBatch(DefaultBatchFactory.java:32)
+2024-07-09T14:04:43.4924088Z 	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)
+2024-07-09T14:04:43.4924407Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024-07-09T14:04:43.4924662Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2024-07-09T14:04:43.4924929Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2024-07-09T14:04:43.4925180Z 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+2024-07-09T14:04:43.4925453Z 	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+2024-07-09T14:04:43.4925734Z 	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+2024-07-09T14:04:43.4926181Z 	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:189)
+2024-07-09T14:04:43.4926478Z 	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:138)
+2024-07-09T14:04:43.4926762Z 	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)
+2024-07-09T14:04:43.8141810Z 	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)
+2024-07-09T14:04:43.8142232Z 	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+2024-07-09T14:04:43.8142360Z 
+2024-07-09T14:04:43.8195211Z ##[error]Bash exited with code '1'.
+2024-07-09T14:04:43.8221228Z ##[section]Finishing: Run SonarCloud Analysis with Bash
