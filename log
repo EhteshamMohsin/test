@@ -1,16 +1,345 @@
-2024-07-10T18:34:12.5122049Z ##[section]Starting: Run SonarCloud Analysis with Bash
-2024-07-10T18:34:12.5127682Z ==============================================================================
-2024-07-10T18:34:12.5127883Z Task         : Command line
-2024-07-10T18:34:12.5127958Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
-2024-07-10T18:34:12.5128088Z Version      : 2.237.1
-2024-07-10T18:34:12.5128170Z Author       : Microsoft Corporation
-2024-07-10T18:34:12.5128253Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
-2024-07-10T18:34:12.5128392Z ==============================================================================
-2024-07-10T18:34:12.9019026Z Generating script.
-2024-07-10T18:34:12.9030451Z ========================== Starting Command Output ===========================
-2024-07-10T18:34:12.9049117Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/3737dc12-6985-45f2-9e8a-4478edefee70.sh
-2024-07-10T18:34:12.9122424Z Starting SonarCloud Analysis
-2024-07-10T18:34:12.9135241Z 
-2024-07-10T18:34:12.9140036Z /home/vsts/work/_temp/3737dc12-6985-45f2-9e8a-4478edefee70.sh: line 2: sonar-scanner: command not found
-2024-07-10T18:34:12.9190861Z ##[error]Bash exited with code '127'.
-2024-07-10T18:34:12.9218662Z ##[section]Finishing: Run SonarCloud Analysis with Bash
+2024-07-10T19:28:22.1551914Z ##[section]Starting: Run SonarCloud Analysis with Bash
+2024-07-10T19:28:22.1558568Z ==============================================================================
+2024-07-10T19:28:22.1558732Z Task         : Command line
+2024-07-10T19:28:22.1558834Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2024-07-10T19:28:22.1559929Z Version      : 2.237.1
+2024-07-10T19:28:22.1560041Z Author       : Microsoft Corporation
+2024-07-10T19:28:22.1560153Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2024-07-10T19:28:22.1560300Z ==============================================================================
+2024-07-10T19:28:22.3747622Z Generating script.
+2024-07-10T19:28:22.3762526Z ========================== Starting Command Output ===========================
+2024-07-10T19:28:22.3784049Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/fa7ae5d3-c4f3-49bd-bc52-e86e6c41a2d8.sh
+2024-07-10T19:28:22.3864705Z Installing SonarScanner CLI
+2024-07-10T19:28:22.4009761Z --2024-07-10 19:28:22--  https://github.com/SonarSource/sonar-scanner-cli/archive/refs/tags/6.1.0.4477.zip
+2024-07-10T19:28:22.4066678Z Resolving github.com (github.com)... 140.82.113.3
+2024-07-10T19:28:22.4306979Z Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+2024-07-10T19:28:22.5471895Z HTTP request sent, awaiting response... 302 Found
+2024-07-10T19:28:22.5480191Z Location: https://codeload.github.com/SonarSource/sonar-scanner-cli/zip/refs/tags/6.1.0.4477 [following]
+2024-07-10T19:28:22.5480919Z --2024-07-10 19:28:22--  https://codeload.github.com/SonarSource/sonar-scanner-cli/zip/refs/tags/6.1.0.4477
+2024-07-10T19:28:22.5503784Z Resolving codeload.github.com (codeload.github.com)... 140.82.112.9
+2024-07-10T19:28:22.5698187Z Connecting to codeload.github.com (codeload.github.com)|140.82.112.9|:443... connected.
+2024-07-10T19:28:22.7000697Z HTTP request sent, awaiting response... 200 OK
+2024-07-10T19:28:22.7001792Z Length: unspecified [application/zip]
+2024-07-10T19:28:22.7003305Z Saving to: ‘6.1.0.4477.zip’
+2024-07-10T19:28:22.7003760Z 
+2024-07-10T19:28:22.7364439Z      0K .......... .......... .......... .......... .......... 1.29M
+2024-07-10T19:28:22.7558148Z     50K .......... .......... .......... .......... .......... 2.56M
+2024-07-10T19:28:22.7560855Z    100K .......... .......... .......... .......... ...        64.1M=0.06s
+2024-07-10T19:28:22.7561012Z 
+2024-07-10T19:28:22.7561598Z 2024-07-10 19:28:22 (2.43 MB/s) - ‘6.1.0.4477.zip’ saved [147112]
+2024-07-10T19:28:22.7562016Z 
+2024-07-10T19:28:22.7616143Z Archive:  6.1.0.4477.zip
+2024-07-10T19:28:22.7616866Z 1497fc93fc16630c69ccdf103d5e40926c4b581e
+2024-07-10T19:28:22.7636454Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/
+2024-07-10T19:28:22.7639334Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.cirrus.star  
+2024-07-10T19:28:22.7639752Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.cirrus.yml  
+2024-07-10T19:28:22.7640134Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.editorconfig  
+2024-07-10T19:28:22.7642780Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.github/
+2024-07-10T19:28:22.7643177Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.github/CODEOWNERS  
+2024-07-10T19:28:22.7643605Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.github/PULL_REQUEST_TEMPLATE.md  
+2024-07-10T19:28:22.7644012Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.github/workflows/
+2024-07-10T19:28:22.7645521Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.github/workflows/release.yml  
+2024-07-10T19:28:22.7646057Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.gitignore  
+2024-07-10T19:28:22.7648995Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.sonarlint/
+2024-07-10T19:28:22.7649402Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/.sonarlint/connectedMode.json  
+2024-07-10T19:28:22.7650185Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/LICENSE.txt  
+2024-07-10T19:28:22.7650562Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/NOTICE.txt  
+2024-07-10T19:28:22.7650928Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/README.md  
+2024-07-10T19:28:22.7653460Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/contributing.md  
+2024-07-10T19:28:22.7653853Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/docs/
+2024-07-10T19:28:22.7654248Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/docs/contributing.md  
+2024-07-10T19:28:22.7654889Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/
+2024-07-10T19:28:22.7655271Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/pom.xml  
+2024-07-10T19:28:22.7655635Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/
+2024-07-10T19:28:22.7656015Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/bad-source-dirs/
+2024-07-10T19:28:22.7658693Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/bad-source-dirs/sonar-project.properties  
+2024-07-10T19:28:22.7659169Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/bad-source-dirs/src/
+2024-07-10T19:28:22.7659614Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/bad-source-dirs/src/Hello.xoo  
+2024-07-10T19:28:22.7660073Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/bad-source-dirs/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7660516Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/basedir-with-source/
+2024-07-10T19:28:22.7660957Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/basedir-with-source/Hello.xoo  
+2024-07-10T19:28:22.7661421Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/basedir-with-source/Hello.xoo.measures  
+2024-07-10T19:28:22.7661899Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/basedir-with-source/sonar-project.properties  
+2024-07-10T19:28:22.7664291Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/
+2024-07-10T19:28:22.7664744Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/
+2024-07-10T19:28:22.7665192Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/
+2024-07-10T19:28:22.7665998Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/
+2024-07-10T19:28:22.7666523Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/src/
+2024-07-10T19:28:22.7667065Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7667621Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7668157Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/temp/
+2024-07-10T19:28:22.7668819Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module1/temp/generated-sonar-project.properties  
+2024-07-10T19:28:22.7669376Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/
+2024-07-10T19:28:22.7672480Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/src/
+2024-07-10T19:28:22.7673044Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7673900Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7675174Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/temp/
+2024-07-10T19:28:22.7675874Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/module2/temp/generated-sonar-project.properties  
+2024-07-10T19:28:22.7676481Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/advanced/using-config-file-prop/sonar-project.properties  
+2024-07-10T19:28:22.7676967Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/
+2024-07-10T19:28:22.7677448Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/
+2024-07-10T19:28:22.7677943Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/
+2024-07-10T19:28:22.7678524Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module1/
+2024-07-10T19:28:22.7679067Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module1/src/
+2024-07-10T19:28:22.7679643Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7683599Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7684180Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module2/
+2024-07-10T19:28:22.7684727Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module2/src/
+2024-07-10T19:28:22.7685295Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7686139Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/modules/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7686702Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/deep-path-for-modules/sonar-project.properties  
+2024-07-10T19:28:22.7687224Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/
+2024-07-10T19:28:22.7687816Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 1/
+2024-07-10T19:28:22.7688348Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 1/src/
+2024-07-10T19:28:22.7688886Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 1/src/Hello.xoo  
+2024-07-10T19:28:22.7689476Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7690021Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 2/
+2024-07-10T19:28:22.7690548Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 2/src/
+2024-07-10T19:28:22.7691222Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 2/src/Hello.xoo  
+2024-07-10T19:28:22.7691806Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/my module 2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7695262Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/module-path-with-space/sonar-project.properties  
+2024-07-10T19:28:22.7695825Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/
+2024-07-10T19:28:22.7696344Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module1/
+2024-07-10T19:28:22.7696901Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module1/src1/
+2024-07-10T19:28:22.7697471Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module1/src1/Hello.xoo  
+2024-07-10T19:28:22.7698068Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module1/src1/Hello.xoo.measures  
+2024-07-10T19:28:22.7698624Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module2/
+2024-07-10T19:28:22.7699239Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module2/sonar-project.properties  
+2024-07-10T19:28:22.7699810Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module2/src2/
+2024-07-10T19:28:22.7700383Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module2/src2/Hello.xoo  
+2024-07-10T19:28:22.7700956Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/module2/src2/Hello.xoo.measures  
+2024-07-10T19:28:22.7701547Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/customization/overwriting-parent-properties/sonar-project.properties  
+2024-07-10T19:28:22.7702297Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/
+2024-07-10T19:28:22.7702766Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/
+2024-07-10T19:28:22.7703262Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module1/
+2024-07-10T19:28:22.7703778Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module1/src/
+2024-07-10T19:28:22.7704305Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7704855Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7736852Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module2/
+2024-07-10T19:28:22.7737465Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module2/src/
+2024-07-10T19:28:22.7738016Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7738913Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7739454Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-base-dir/sonar-project.properties  
+2024-07-10T19:28:22.7739966Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/
+2024-07-10T19:28:22.7740485Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/
+2024-07-10T19:28:22.7741004Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/src/
+2024-07-10T19:28:22.7741526Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7742150Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7742684Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/temp/
+2024-07-10T19:28:22.7743233Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module1/temp/empty-dir.txt  
+2024-07-10T19:28:22.7743747Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/
+2024-07-10T19:28:22.7744263Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/src/
+2024-07-10T19:28:22.7744801Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7745368Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7745885Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/temp/
+2024-07-10T19:28:22.7746476Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/module2/temp/generated-sonar-project.properties  
+2024-07-10T19:28:22.7747223Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/failures/unexisting-config-file/sonar-project.properties  
+2024-07-10T19:28:22.7747696Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/
+2024-07-10T19:28:22.7748171Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/
+2024-07-10T19:28:22.7748706Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module1/
+2024-07-10T19:28:22.7749291Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module1/sonar-project.properties  
+2024-07-10T19:28:22.7749839Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module1/src/
+2024-07-10T19:28:22.7750417Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7751014Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7751710Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module2/
+2024-07-10T19:28:22.7752275Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module2/sonar-project.properties  
+2024-07-10T19:28:22.7752843Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module2/src/
+2024-07-10T19:28:22.7753423Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7754012Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7754579Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/sonar-project.properties  
+2024-07-10T19:28:22.7755142Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/src/
+2024-07-10T19:28:22.7755701Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-each-module/src/placeholder.txt  
+2024-07-10T19:28:22.7756224Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/
+2024-07-10T19:28:22.7756724Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module1/
+2024-07-10T19:28:22.7757255Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module1/src/
+2024-07-10T19:28:22.7757807Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module1/src/Hello.xoo  
+2024-07-10T19:28:22.7758389Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module1/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7758913Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module2/
+2024-07-10T19:28:22.7759585Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module2/src/
+2024-07-10T19:28:22.7761361Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module2/src/Hello.xoo  
+2024-07-10T19:28:22.7762128Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/module2/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7762773Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/multi-module/simplest/simplest-with-props-on-root/sonar-project.properties  
+2024-07-10T19:28:22.7763269Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/
+2024-07-10T19:28:22.7763730Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/conf/
+2024-07-10T19:28:22.7764242Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/conf/sq-project.properties  
+2024-07-10T19:28:22.7764741Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/sonar-project.properties  
+2024-07-10T19:28:22.7765220Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/
+2024-07-10T19:28:22.7765691Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/basic/
+2024-07-10T19:28:22.7766370Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/basic/Hello.xoo  
+2024-07-10T19:28:22.7766948Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/basic/Hello.xoo.measures  
+2024-07-10T19:28:22.7767459Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/basic/World.xoo  
+2024-07-10T19:28:22.7767979Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-project-settings-path/src/basic/World.xoo.measures  
+2024-07-10T19:28:22.7768422Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/
+2024-07-10T19:28:22.7768868Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/.gitignore  
+2024-07-10T19:28:22.7769356Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/sonar-project.properties  
+2024-07-10T19:28:22.7769813Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/src/
+2024-07-10T19:28:22.7770246Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/src/Hello.xoo  
+2024-07-10T19:28:22.7770727Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/override-working-dir/src/Hello.xoo.measures  
+2024-07-10T19:28:22.7771163Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-js/
+2024-07-10T19:28:22.7771558Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-js/file.js  
+2024-07-10T19:28:22.7799175Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/
+2024-07-10T19:28:22.7799735Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/
+2024-07-10T19:28:22.7800229Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/basic/
+2024-07-10T19:28:22.7800726Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/basic/Hello.xoo  
+2024-07-10T19:28:22.7801229Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/basic/Hello.xoo.measures  
+2024-07-10T19:28:22.7803210Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/basic/World.xoo  
+2024-07-10T19:28:22.7803769Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample-no-properties/src/basic/World.xoo.measures  
+2024-07-10T19:28:22.7804201Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/
+2024-07-10T19:28:22.7804676Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/sonar-project.properties  
+2024-07-10T19:28:22.7805117Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/
+2024-07-10T19:28:22.7805548Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/basic/
+2024-07-10T19:28:22.7805977Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/basic/Hello.xoo  
+2024-07-10T19:28:22.7806456Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/basic/Hello.xoo.measures  
+2024-07-10T19:28:22.7806922Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/basic/World.xoo  
+2024-07-10T19:28:22.7807380Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/projects/simple-sample/src/basic/World.xoo.measures  
+2024-07-10T19:28:22.7807791Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/
+2024-07-10T19:28:22.7808416Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/
+2024-07-10T19:28:22.7808793Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/
+2024-07-10T19:28:22.7809164Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/
+2024-07-10T19:28:22.7809578Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/
+2024-07-10T19:28:22.7810018Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/
+2024-07-10T19:28:22.7810448Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/
+2024-07-10T19:28:22.7810943Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/DistributionTest.java  
+2024-07-10T19:28:22.7811452Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/MultimoduleTest.java  
+2024-07-10T19:28:22.7811960Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/ScannerTest.java  
+2024-07-10T19:28:22.7812444Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/ScannerTestCase.java  
+2024-07-10T19:28:22.7812964Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/it/src/test/java/com/sonarsource/scanner/it/SonarScannerTestSuite.java  
+2024-07-10T19:28:22.7813378Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/misc/
+2024-07-10T19:28:22.7813748Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/misc/symlink-tester.sh  
+2024-07-10T19:28:22.7814128Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/pom.xml  
+2024-07-10T19:28:22.7817977Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/sonar-docs/
+2024-07-10T19:28:22.7818569Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/sonar-docs/analysis/
+2024-07-10T19:28:22.7818982Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/sonar-docs/analysis/scan/
+2024-07-10T19:28:22.7819401Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/sonar-docs/analysis/scan/sonarscanner.md  
+2024-07-10T19:28:22.7819787Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/
+2024-07-10T19:28:22.7820427Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/
+2024-07-10T19:28:22.7820811Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/
+2024-07-10T19:28:22.7824470Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/bin/
+2024-07-10T19:28:22.7826464Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/bin/sonar-scanner  
+2024-07-10T19:28:22.7833158Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/bin/sonar-scanner-debug  
+2024-07-10T19:28:22.7836476Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/bin/sonar-scanner-debug.bat  
+2024-07-10T19:28:22.7839644Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/bin/sonar-scanner.bat  
+2024-07-10T19:28:22.7840709Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/conf/
+2024-07-10T19:28:22.7841241Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/conf/sonar-scanner.properties  
+2024-07-10T19:28:22.7841719Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/dist-linux-aarch64.xml  
+2024-07-10T19:28:22.7842161Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/dist-linux-x64.xml  
+2024-07-10T19:28:22.7842608Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/dist-macosx-aarch64.xml  
+2024-07-10T19:28:22.7843324Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/dist-macosx-x64.xml  
+2024-07-10T19:28:22.7843771Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/dist-windows-x64.xml  
+2024-07-10T19:28:22.7844220Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/filter-dist.properties  
+2024-07-10T19:28:22.7844657Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/filter-noarch.properties  
+2024-07-10T19:28:22.7845095Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/assembly/noarch.xml  
+2024-07-10T19:28:22.7845487Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/
+2024-07-10T19:28:22.7845869Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/
+2024-07-10T19:28:22.7846255Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/
+2024-07-10T19:28:22.7846694Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/
+2024-07-10T19:28:22.7847134Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/
+2024-07-10T19:28:22.7847574Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/Cli.java  
+2024-07-10T19:28:22.7848051Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/Conf.java  
+2024-07-10T19:28:22.7848523Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/Exit.java  
+2024-07-10T19:28:22.7848998Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/Main.java  
+2024-07-10T19:28:22.7849477Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/PropertyResolver.java  
+2024-07-10T19:28:22.7850018Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/ScannerEngineBootstrapperFactory.java  
+2024-07-10T19:28:22.7850533Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/ScannerVersion.java  
+2024-07-10T19:28:22.7851013Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/Stats.java  
+2024-07-10T19:28:22.7851683Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/SystemInfo.java  
+2024-07-10T19:28:22.7852177Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/java/org/sonarsource/scanner/cli/package-info.java  
+2024-07-10T19:28:22.7852599Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/resources/
+2024-07-10T19:28:22.7852991Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/resources/logback.xml  
+2024-07-10T19:28:22.7853422Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/main/resources/version.txt  
+2024-07-10T19:28:22.7853804Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/
+2024-07-10T19:28:22.7854156Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/
+2024-07-10T19:28:22.7859914Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/
+2024-07-10T19:28:22.7864737Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonar/
+2024-07-10T19:28:22.7870329Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonar/api/
+2024-07-10T19:28:22.7874721Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonar/api/utils/
+2024-07-10T19:28:22.7875244Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonar/api/utils/MessageException.java  
+2024-07-10T19:28:22.7875982Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/
+2024-07-10T19:28:22.7876396Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/
+2024-07-10T19:28:22.7876841Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/
+2024-07-10T19:28:22.7880154Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/CliTest.java  
+2024-07-10T19:28:22.7880672Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/ConfTest.java  
+2024-07-10T19:28:22.7881156Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/MainTest.java  
+2024-07-10T19:28:22.7881647Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/PropertyResolverTest.java  
+2024-07-10T19:28:22.7882202Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/ScannerEngineBootstrapperFactoryTest.java  
+2024-07-10T19:28:22.7882711Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/StatsTest.java  
+2024-07-10T19:28:22.7883210Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/org/sonarsource/scanner/cli/SystemInfoTest.java  
+2024-07-10T19:28:22.7883631Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/testutils/
+2024-07-10T19:28:22.7884092Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/testutils/ConcurrentListAppender.java  
+2024-07-10T19:28:22.7884542Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/java/testutils/LogTester.java  
+2024-07-10T19:28:22.7884928Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/
+2024-07-10T19:28:22.7885391Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/
+2024-07-10T19:28:22.7885867Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/
+2024-07-10T19:28:22.7886311Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/
+2024-07-10T19:28:22.7886750Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/
+2024-07-10T19:28:22.7887483Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/
+2024-07-10T19:28:22.7887991Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/emptyModules/
+2024-07-10T19:28:22.7893762Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/emptyModules/project/
+2024-07-10T19:28:22.7894936Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/emptyModules/project/sonar-project.properties  
+2024-07-10T19:28:22.7895576Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/
+2024-07-10T19:28:22.7937189Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/project/
+2024-07-10T19:28:22.7937969Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/project/sonar-project.properties  
+2024-07-10T19:28:22.7938599Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/runner/
+2024-07-10T19:28:22.7939742Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/runner/conf/
+2024-07-10T19:28:22.7940396Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadCompleteConfiguration/runner/conf/sonar-scanner.properties  
+2024-07-10T19:28:22.7940984Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/
+2024-07-10T19:28:22.7941567Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/
+2024-07-10T19:28:22.7942160Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/module1/
+2024-07-10T19:28:22.7942817Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/module1/sonar-project.properties  
+2024-07-10T19:28:22.7943430Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/module2/
+2024-07-10T19:28:22.7944083Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/module2/sonar-project.properties  
+2024-07-10T19:28:22.7944751Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfiguration/project/sonar-project.properties  
+2024-07-10T19:28:22.7945372Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/
+2024-07-10T19:28:22.7946065Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/
+2024-07-10T19:28:22.7946710Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module2.properties  
+2024-07-10T19:28:22.7947367Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_1/
+2024-07-10T19:28:22.7948311Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_1/sonar-project.properties  
+2024-07-10T19:28:22.7948982Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_2/
+2024-07-10T19:28:22.7949636Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_2/Sample.js  
+2024-07-10T19:28:22.7950338Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_2/sonar-project.properties  
+2024-07-10T19:28:22.7951014Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_3/
+2024-07-10T19:28:22.7951705Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/module_3/sonar-project.properties  
+2024-07-10T19:28:22.7952574Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationOverrideBasedir/project/sonar-project.properties  
+2024-07-10T19:28:22.7953254Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/
+2024-07-10T19:28:22.7953872Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/project/
+2024-07-10T19:28:22.7954517Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/project/module1/
+2024-07-10T19:28:22.7955268Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/project/module1/sonar-project.properties  
+2024-07-10T19:28:22.7955925Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/project/module2/
+2024-07-10T19:28:22.7956615Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadModuleConfigurationWithoutRootConf/project/module2/sonar-project.properties  
+2024-07-10T19:28:22.7957242Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadRunnerSettingsByDirectPath/
+2024-07-10T19:28:22.7957865Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadRunnerSettingsByDirectPath/other-conf.properties  
+2024-07-10T19:28:22.7958437Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadRunnerSettingsByHome/
+2024-07-10T19:28:22.7959019Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadRunnerSettingsByHome/conf/
+2024-07-10T19:28:22.7959645Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldLoadRunnerSettingsByHome/conf/sonar-scanner.properties  
+2024-07-10T19:28:22.7960470Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldOverrideProjectSettingsPath/
+2024-07-10T19:28:22.7961034Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldOverrideProjectSettingsPath/conf/
+2024-07-10T19:28:22.7969021Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldOverrideProjectSettingsPath/conf/sq-project.properties  
+2024-07-10T19:28:22.7970066Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldOverrideProjectSettingsPath/sonar-project.properties  
+2024-07-10T19:28:22.7970700Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/
+2024-07-10T19:28:22.7971319Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/
+2024-07-10T19:28:22.7971942Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/
+2024-07-10T19:28:22.7972602Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module11/
+2024-07-10T19:28:22.7973593Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module11/module111/
+2024-07-10T19:28:22.7974329Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module11/module111/placeholder.txt  
+2024-07-10T19:28:22.7975812Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module11/module112/
+2024-07-10T19:28:22.7976549Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module11/module112/placeholder.txt  
+2024-07-10T19:28:22.7977243Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module12/
+2024-07-10T19:28:22.7977935Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module1/module12/placeholder.txt  
+2024-07-10T19:28:22.7978593Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module2/
+2024-07-10T19:28:22.7980286Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module2/module21/
+2024-07-10T19:28:22.7981538Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module2/module21/placeholder.txt  
+2024-07-10T19:28:22.7982374Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module2/module22/
+2024-07-10T19:28:22.7983068Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/module2/module22/placeholder.txt  
+2024-07-10T19:28:22.7984039Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/ConfTest/shouldSupportDeepModuleConfigurationInRoot/project/sonar-project.properties  
+2024-07-10T19:28:22.7984602Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/RunnerTest/
+2024-07-10T19:28:22.7985128Z    creating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/RunnerTest/shouldInitDirs/
+2024-07-10T19:28:22.7985684Z  extracting: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/src/test/resources/org/sonarsource/scanner/cli/RunnerTest/shouldInitDirs/fake.txt  
+2024-07-10T19:28:22.7986125Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/third-party-licenses.sh  
+2024-07-10T19:28:22.7986533Z   inflating: /home/vsts/sonar-scanner/sonar-scanner-cli-6.1.0.4477/wss-unified-agent.config  
+2024-07-10T19:28:22.7988214Z /home/vsts/work/_temp/fa7ae5d3-c4f3-49bd-bc52-e86e6c41a2d8.sh: line 12: sonar-scanner: command not found
+2024-07-10T19:28:22.7988760Z /home/vsts/work/_temp/fa7ae5d3-c4f3-49bd-bc52-e86e6c41a2d8.sh: line 19: unexpected EOF while looking for matching `"'
+2024-07-10T19:28:22.7989372Z /home/vsts/work/_temp/fa7ae5d3-c4f3-49bd-bc52-e86e6c41a2d8.sh: line 21: syntax error: unexpected end of file
+2024-07-10T19:28:22.7989764Z Starting SonarCloud Analysis
+2024-07-10T19:28:22.7990201Z 
+2024-07-10T19:28:22.8032429Z ##[error]Bash exited with code '2'.
+2024-07-10T19:28:22.8047277Z ##[section]Finishing: Run SonarCloud Analysis with Bash
