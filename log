@@ -1,7 +1,1 @@
-14:34:13.459 INFO  SonarScanner CLI 6.1.0.4477
-14:34:13.464 INFO  Java 17.0.11 Eclipse Adoptium (64-bit)
-14:34:13.465 INFO  Linux 6.5.0-1023-azure amd64
-Starting SonarCloud Analysis
-
-/home/vsts/work/_temp/6e729adb-f4c6-4322-bab5-73c24da3438a.sh: line 23: unexpected EOF while looking for matching `"'
-/home/vsts/work/_temp/6e729adb-f4c6-4322-bab5-73c24da3438a.sh: line 25: syntax error: unexpected end of file
+.
