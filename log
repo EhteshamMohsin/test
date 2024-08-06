@@ -1,1 +1,7 @@
 .
+/azp/agent/_work/_temp/e3736005-5ccb-4405-ae55-91d734ae1988.sh: line 10: https://sonarcloud.io/api/projects/search: No such file or directory
+(standard_in) 1: syntax error
+(standard_in) 1: syntax error
+Projects with executions: 0
+Projects without executions: 0
+Project execution status has been exported to sonar_projects_execution_status.csv
